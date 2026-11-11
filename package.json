@@ -1,0 +1,27 @@
+{
+  "name": "daftar-bacaan",
+  "version": "1.1.0",
+  "description": "Aplikasi CRUD daftar bacaan menggunakan Express, Prisma, dan Neon PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "prisma:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "node prisma/seed.js",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  }
+}
